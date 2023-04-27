@@ -1,19 +1,27 @@
-let person = 'mario';
-let age = 30;
-let isBlackBelt = true;
+// arrays
+let names = ['Sujan', 'Subal', 'Arafat'];
 
-// person = 20;
-person = 'luigi';
+names.push('Salah');
+// names.push(20);
 
-// age = 'mario';
-age = 20;
+let mixed = ['Sujan', 'Salah', 20, true];
 
-// isBlackBelt = 100;
-isBlackBelt = false;
+mixed.push(20);
+mixed[3] = 'Random';
 
-const circ = (diameter: number) => {
-  return diameter * Math.PI;
-}
+// objects
+let person = {
+  name: 'Salah',
+  age: 23,
+  hobby: 'Fishing'
+};
 
-// console.log(circ('hello'));
-console.log(circ(7.5));
+// person['name'] = 20;
+person['name'] = 'Rahat';
+
+// person = {
+//   name: 'Subal',
+//   age: 20,
+//   // hobby: 'Driving'
+// }
+

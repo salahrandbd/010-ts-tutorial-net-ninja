@@ -1,14 +1,20 @@
-var person = 'mario';
-var age = 30;
-var isBlackBelt = true;
-// person = 20;
-person = 'luigi';
-// age = 'mario';
-age = 20;
-// isBlackBelt = 100;
-isBlackBelt = false;
-var circ = function (diameter) {
-    return diameter * Math.PI;
+// arrays
+var names = ['Sujan', 'Subal', 'Arafat'];
+names.push('Salah');
+// names.push(20);
+var mixed = ['Sujan', 'Salah', 20, true];
+mixed.push(20);
+mixed[3] = 'Random';
+// objects
+var person = {
+    name: 'Salah',
+    age: 23,
+    hobby: 'Fishing'
 };
-// console.log(circ('hello'));
-console.log(circ(7.5));
+// person['name'] = 20;
+person['name'] = 'Rahat';
+// person = {
+//   name: 'Subal',
+//   age: 20,
+//   // hobby: 'Driving'
+// }
