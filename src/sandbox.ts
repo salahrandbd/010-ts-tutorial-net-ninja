@@ -1,16 +1,7 @@
-let greet: Function;
+// type aliases
+type StringOrNum = string|number;
+type ObjectWithName = { name: string, uuid: StringOrNum };
 
-greet = () => {
-  console.log('Hello World!');
-}
-
-// parameter type & default parameter value
-// let add = (a: number, b: number, c?: number) => {
-let add = (a: number, b: number, c: number = 30) => {
-  return a + b;
-}
-
-// return type
-let minus = (a: number, b: number): number => {
-  return a - b;
+let getUser = (uuid: StringOrNum): ObjectWithName => {
+  return { name: 'Salah', uuid };
 }
