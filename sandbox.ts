@@ -1,43 +1,20 @@
-// explicit types
-let character: string;
-let age: number;
-let isLoggedIn: boolean;
+let character: any;
 
 character = 'mario';
-// age = 'yogi';
-// isLoggedIn = 20;
+character = 20;
 
-// arrays
-let chars: string[] = [];
+// array
+let mixed: any[] = [];
 
-chars.push('saun');
-// chars.push(20);
-
-// unions
-let random: string|boolean;
-
-random = true;
-random = 'random';
-// random = 20;
-
-let mixed: (number|boolean)[] = [];
-
+mixed.push('saun');
 mixed.push(20);
 mixed.push(true);
 
-// objects
-let person: object;
-
-person = [];
-
-person = { name: 'mario', age: 20, beltColor: 'black' };
-
-let person2: {
-  name: string,
-  age: number,
-  beltColor: string
+// object
+let person: {
+  name: any,
+  age: any 
 };
 
-// person2 = { name: 'saun' };
-person2 = { name: 'mario', age: 20, beltColor: 'black' };
-
+person = { name: 'saun', age: 20 };
+person = { name: 'saun', age: true };
