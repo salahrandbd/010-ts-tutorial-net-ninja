@@ -1,20 +1,26 @@
+// explicit types
+var character;
+var age;
+var isLoggedIn;
+character = 'mario';
+// age = 'yogi';
+// isLoggedIn = 20;
 // arrays
-var names = ['Sujan', 'Subal', 'Arafat'];
-names.push('Salah');
-// names.push(20);
-var mixed = ['Sujan', 'Salah', 20, true];
+var chars = [];
+chars.push('saun');
+// chars.push(20);
+// unions
+var random;
+random = true;
+random = 'random';
+// random = 20;
+var mixed = [];
 mixed.push(20);
-mixed[3] = 'Random';
+mixed.push(true);
 // objects
-var person = {
-    name: 'Salah',
-    age: 23,
-    hobby: 'Fishing'
-};
-// person['name'] = 20;
-person['name'] = 'Rahat';
-// person = {
-//   name: 'Subal',
-//   age: 20,
-//   // hobby: 'Driving'
-// }
+var person;
+person = [];
+person = { name: 'mario', age: 20, beltColor: 'black' };
+var person2;
+// person2 = { name: 'saun' };
+person2 = { name: 'mario', age: 20, beltColor: 'black' };

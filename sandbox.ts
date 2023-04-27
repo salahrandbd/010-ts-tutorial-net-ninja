@@ -1,27 +1,43 @@
+// explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
+
+character = 'mario';
+// age = 'yogi';
+// isLoggedIn = 20;
+
 // arrays
-let names = ['Sujan', 'Subal', 'Arafat'];
+let chars: string[] = [];
 
-names.push('Salah');
-// names.push(20);
+chars.push('saun');
+// chars.push(20);
 
-let mixed = ['Sujan', 'Salah', 20, true];
+// unions
+let random: string|boolean;
+
+random = true;
+random = 'random';
+// random = 20;
+
+let mixed: (number|boolean)[] = [];
 
 mixed.push(20);
-mixed[3] = 'Random';
+mixed.push(true);
 
 // objects
-let person = {
-  name: 'Salah',
-  age: 23,
-  hobby: 'Fishing'
+let person: object;
+
+person = [];
+
+person = { name: 'mario', age: 20, beltColor: 'black' };
+
+let person2: {
+  name: string,
+  age: number,
+  beltColor: string
 };
 
-// person['name'] = 20;
-person['name'] = 'Rahat';
-
-// person = {
-//   name: 'Subal',
-//   age: 20,
-//   // hobby: 'Driving'
-// }
+// person2 = { name: 'saun' };
+person2 = { name: 'mario', age: 20, beltColor: 'black' };
 
