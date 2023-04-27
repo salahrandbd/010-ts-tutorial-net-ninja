@@ -1,20 +1,16 @@
-let character: any;
+let greet: Function;
 
-character = 'mario';
-character = 20;
+greet = () => {
+  console.log('Hello World!');
+}
 
-// array
-let mixed: any[] = [];
+// parameter type & default parameter value
+// let add = (a: number, b: number, c?: number) => {
+let add = (a: number, b: number, c: number = 30) => {
+  return a + b;
+}
 
-mixed.push('saun');
-mixed.push(20);
-mixed.push(true);
-
-// object
-let person: {
-  name: any,
-  age: any 
-};
-
-person = { name: 'saun', age: 20 };
-person = { name: 'saun', age: true };
+// return type
+let minus = (a: number, b: number): number => {
+  return a - b;
+}
