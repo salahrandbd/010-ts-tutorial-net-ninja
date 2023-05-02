@@ -2,18 +2,10 @@
 // console.log(anchor.href);
 
 class Invoice {
-  client: string;
-  details: string;
-  amount: number;
-
-  constructor(client: string, details: string, amount: number) {
-    this.client = client;
-    this.details = details;
-    this.amount = amount;
-  }
+  constructor(readonly client: string, private details: string, public amount: number) {}
 
   format() {
-    console.log(`${this.client} owes $${this.amount} for ${this.details}`);
+    return `${this.client} owes $${this.amount} for ${this.details}`;
   }
 }
 
@@ -23,7 +15,9 @@ const invTwo = new Invoice('luigi', 'digital marketing', 300);
 const invoices: Invoice[] = [];
 invoices.push(invOne, invTwo);
 
-console.log(invoices);
+invoices.forEach(invoice => {
+  console.log(invoice.client, invoice.amount, invoice.format());
+});
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 // console.log(form.children);
