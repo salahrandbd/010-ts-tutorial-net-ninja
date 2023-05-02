@@ -1,13 +1,6 @@
 // const anchor = document.querySelector('a')!;
 // console.log(anchor.href);
-
-class Invoice {
-  constructor(readonly client: string, private details: string, public amount: number) {}
-
-  format() {
-    return `${this.client} owes $${this.amount} for ${this.details}`;
-  }
-}
+import { Invoice } from "./classes/invoice.js";
 
 const invOne = new Invoice('yoshi', 'portfolio website', 200);
 const invTwo = new Invoice('luigi', 'digital marketing', 300);
