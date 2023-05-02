@@ -1,22 +1,13 @@
 "use strict";
-// function signature
-// example 01
-let greet;
-greet = (name, greeting) => {
-    console.log(`${name} says ${greeting}`);
-};
-// example 02
-let calc;
-calc = (numOne, numTwo, action) => {
-    if (action == 'add') {
-        return numOne + numTwo;
-    }
-    else {
-        return numOne - numTwo;
-    }
-};
-// example 03
-let logDetails;
-logDetails = (obj) => {
-    console.log(`${obj.name} is ${obj.age} years old!`);
-};
+// const anchor = document.querySelector('a')!;
+// console.log(anchor.href);
+const form = document.querySelector('.new-item-form');
+// console.log(form.children);
+const type = document.querySelector('#type');
+const tofrom = document.querySelector('#tofrom');
+const details = document.querySelector('#details');
+const amount = document.querySelector('#amount');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});

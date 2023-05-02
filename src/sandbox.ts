@@ -1,23 +1,16 @@
-// function signature
+// const anchor = document.querySelector('a')!;
+// console.log(anchor.href);
 
-// example 01
-let greet: (a: string, b: string) => void 
-greet = (name: string, greeting: string) => {
-  console.log(`${name} says ${greeting}`);
-}
+const form = document.querySelector('.new-item-form') as HTMLFormElement;
+// console.log(form.children);
 
-// example 02
-let calc: (a: number, b: number, c: string) => number 
-calc = (numOne: number, numTwo: number, action: string) => {
-  if(action == 'add') {
-    return numOne + numTwo;
-  } else {
-    return numOne - numTwo;
-  }
-}
+const type = document.querySelector('#type') as HTMLSelectElement;
+const tofrom = document.querySelector('#tofrom') as HTMLInputElement;
+const details = document.querySelector('#details') as HTMLInputElement;
+const amount = document.querySelector('#amount') as HTMLInputElement;
 
-// example 03
-let logDetails: (obj: { name: string, age: number }) => void 
-logDetails = (obj: { name: string, age: number }) => {
-  console.log(`${obj.name} is ${obj.age} years old!`);
-}
+form.addEventListener('submit', (e: Event) => {
+  e.preventDefault();
+
+  console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});
